@@ -1,0 +1,66 @@
+1: Diferencia entre let, const y var: let es una variable, es decir, asigna un valor a una palabra, por ejemplo 
+let pepe
+pepe = "12" 
+si queremos que en un futuro tenga otro valor, con let es posible, ya que si usamos let en la misma palabra pero le 
+cambiamos el valor, la palabra se quedará con el nuevo valor.
+Const es una constante, funciona de la misma forma que let pero el valor nunca cambiará, si volvemos a usar const con la misma
+palabra nos saldrá error
+const coco
+coco = "12"
+Y por ultimo tenemos var, var es lo que se usaba antes para let, pero ya está obsoleto.
+
+2: Tipaje dinámico significa que las cosas pueden cambiar, es decir, que tu puedes asignarle un valor a una variable,
+luego cambiar el valor y no se romperá.
+
+3: Como ya expliqué, una constante funciona de la misma manera que una variable pero esta no puede cambiar de valor,
+si intentas cambiar el valor de una constante te saltará un error ya que estas no pueden cambiar.
+
+4: nomUsuari, edatDeAlumne, preuDelProducte, esMajorEdat, numeroDeTelefonMobil
+
+5: 1usuari está mal porque empieza con un digito, en su lugar habria que poner usuari1
+nom-complet también está mal porque tiene "-" y como simbolos solo pueden haber o "_" o "$" un ejemplo de
+nombre correcto seria nom_complet o nomComplet
+class está bien
+let está mal porque let es una palabra reservadal, en su lugar pon por ejemplo patata
+my-age lo mismo que nom-complet, pon my_age o myAge
+nomUsuari está bien
+edat está bien
+_preu está bien 
+
+6: Los tipos de datos que son primitivos en JavaScript son: string, boolean, null, number, undefinded, symbol y bigint. Hay otros
+tipos de datos que no son primitivos, como por ejemplo function u object.
+
+7: La orden typeof indica el tipo de dato que es la variable/valor que se le indica, por ejemplo:
+typeof "Hola" devolverá string ya que es una cadena de texto
+typeof 25 devolverá number ya que es un numero
+typeof true devolverá boolean porque boolean es o verdadero o falso
+typeof 9007199254740991n devolverá bigint ya que es un numero muy grande que number no puede representar.
+
+8: Tambien tenemos otros conceptos, como NaN, Infinity y undefined
+NaN significa Not a Number, este concepto sale cuando por ejemplo intentamos dividir 0 / 0 o hacer una operacion por ejemplp
+"pepe" * 2
+Infinity es el valor infinito, este sale por ejemplo cuando dividimos cualquier otro numero que no sea 0 entre 0, por ejemplo 5 / 0,
+también existe -infinity
+y luego tenemos undefined que es cuando algo no está definido, por ejemplo "let a" 
+
+9: Hay 2 tipos de conversiones, implicitas y explicitas, las conversiones implicitas son cuando no usas funciones o valores
+y directamente lo haces tú, por ejemplo "5" * 2 o "Hola" + 2
+La conversion explicita es cuando usamos funciones o cosas por el estilo, por ejemplo number("3") o string(paco)
+
+10:
+Number("123") =
+Number("123abc") =
+Number("") =
+Number(null)                     =
+Number(undefined)
+
+String(true)
+String(25)
+
+Boolean(1)
+Boolean(0)
+Boolean("")
+Boolean("Hola")
+
+
+11:

@@ -1,0 +1,9 @@
+let variableA = "A"
+let variableB = "B"
+let variableC = "C"
+let patata = variableB
+variableB = variableC
+variableC = patata
+console.log("A = ", variableA)
+console.log("B = ", variableB)
+console.log("C = ", variableC)

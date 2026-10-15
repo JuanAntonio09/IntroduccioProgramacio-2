@@ -1,0 +1,10 @@
+console.log("10" + 5)
+console.log("10" - 5)
+console.log("10" * 2)
+console.log("10" / 2)
+
+let num = Number("10")
+console.log(num + 5)
+console.log(num - 5)
+console.log(num * 2)
+console.log(num / 2)
