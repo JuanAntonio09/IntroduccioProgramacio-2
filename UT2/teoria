@@ -48,19 +48,25 @@ y directamente lo haces tú, por ejemplo "5" * 2 o "Hola" + 2
 La conversion explicita es cuando usamos funciones o cosas por el estilo, por ejemplo number("3") o string(paco)
 
 10:
-Number("123") =
-Number("123abc") =
-Number("") =
-Number(null)                     =
-Number(undefined)
+Number("123") = 123
+Number("123abc") = NaN
+Number("") = 0
+Number(null) = 0
+Number(undefined) =NaN
 
-String(true)
-String(25)
+String(true) = "true"
+String(25) = "25"
 
-Boolean(1)
-Boolean(0)
-Boolean("")
-Boolean("Hola")
+Boolean(1) = true
+Boolean(0) = fale
+Boolean("") = false
+Boolean("Hola") = true
 
 
-11:
+11: En un navegador, JS puede interactuar directamente con la página web
+mientras que con node.js puede acceder directamente a archivos o carpetas
+del sistema
+
+Forman parte del navegador ya que están hechas para el navegador, muestra 
+ventanas emergentes y interactuan directamente con el usuario, en Node no existen de forma
+nativa ya que de por si no hay una interfaz gráfica.
