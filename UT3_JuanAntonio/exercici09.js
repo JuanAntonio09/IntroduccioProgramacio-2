@@ -1,6 +1,6 @@
 const prompt = require('prompt-sync')()
 
-let nom =
+let nom = Number(prompt("Quants anys tens? "))
 if (nom >= 18) {
     console.log("Ets major d'edat")
 } else {
