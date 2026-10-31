@@ -6,30 +6,30 @@ let edat = Number(prompt("Quants anys tens? "))
 console.log("Benvingut/da, " + nom + "!")
 
 let puntuacio = 0
-
+console.log("Has trovat una porta que amaga un tresor.")
 let proba1 = prompt("Introdueix el codi secret: ")
 if (proba1 == CODI_SECRET) {
-    console.log("La porta s'ha obert!")
-    puntuacio += 10
-    if (edat >= 16) {
-    console.log("Pots entrar a la sala del tresor.")
-    let tresor = prompt("Vols agafar el tresor? ")
-
-    switch(tresor) {
-    case "si":
-        console.log("Has aconseguit el tresor!");
-        puntuacio += 20;
-        break;
-    default:
-      console.log("No has aconseguit el tresor."); 
-}
-
-
-}   else {
-    console.log("Ets massa jove per entrar a la sala.")
-    } 
-} else {
+    let proba2 = prompt("Tens 16 anys o més? ").toLowerCase()
+        if (proba2 === "si") {
+            if (edat >= 16) {
+                console.log("La porta s'ha obert!")
+                puntuacio += 10
+                console.log("Pots entrar a la sala del tresor.")
+                let tresor = prompt("Vols agafar el tresor? ")
+                switch(tresor) {
+                    case "si":
+                    console.log("Has aconseguit el tresor!");
+                    puntuacio += 20;
+                    break;
+                default:
+                console.log("No has aconseguit el tresor.");
+                 }
+            } else {
+            console.log("Ets massa jove per entrar a la sala.")
+        } 
+    } else {
     console.log("Codi incorrecte. No pots entrar")
+    }
 }
 
 
