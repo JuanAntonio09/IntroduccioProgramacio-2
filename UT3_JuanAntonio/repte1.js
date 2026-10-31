@@ -11,19 +11,37 @@ let proba1 = prompt("Introdueix el codi secret: ")
 if (proba1 == CODI_SECRET) {
     console.log("La porta s'ha obert!")
     puntuacio += 10
+    if (edat >= 16) {
+    console.log("Pots entrar a la sala del tresor.")
+    let tresor = prompt("Vols agafar el tresor? ")
+
+    switch(tresor) {
+    case "si":
+        console.log("Has aconseguit el tresor!");
+        puntuacio += 20;
+        break;
+    default:
+      console.log("No has aconseguit el tresor."); 
+}
+
+
+}   else {
+    console.log("Ets massa jove per entrar a la sala.")
+    } 
 } else {
     console.log("Codi incorrecte. No pots entrar")
 }
 
-if (edat >= 16) {
-    console.log("Pots entrar a la sala del tresor.")
-} else {
-    console.log("Ets massa jove per entrar a la sala.")
-} 
 
-let tresor = prompt("")
 
-switch(tresor) {
-    case si:
-        c
-}
+console.log("--- RESULTAT FINAL ---")
+
+console.log(
+    "Jugador: " + nom,
+    "\nEdat: " + edat,
+    "\nPuntuació: " + puntuacio,
+)
+// "\n" es un salto de linea, no quería que quedase todo en una linea y a su vez
+// tampoco queria hacer 3 console logs.
+
+puntuacio >= 30 ? console.log("Has guanyat!") : console.log("No has aconseguit el tresor.")
